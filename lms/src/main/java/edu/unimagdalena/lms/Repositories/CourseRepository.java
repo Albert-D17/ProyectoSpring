@@ -14,18 +14,27 @@ import java.util.UUID;
 
 public interface CourseRepository extends JpaRepository<Course, UUID> {
 
+
+
     Optional<Course> findByTitle (String title);
 
+    //Encuentra cursos en un estado específico (se pasa como parámetro)
     @Query("SELECT c FROM Course c WHERE c.status = :status AND c.instructor.id = :instructorId")
     List<Course> findByStatusAndInstructorId(@Param("status") CourseStatus status,
                                              @Param("instructorId") UUID instructorId
     );
 
-
-    @Query("SELECT s.student FROM Enrollment e WHERE e.course.id = :courseId")
+    //Encuentra estudiantes por Id curso
+    @Query("SELECT e.student FROM Enrollment e WHERE e.course.id = :courseId")
     List<Student> findStudentByCourseId (@Param("courseId") UUID courseId);
 
+    // Cursos por estado
+    List<Course> findByStatus(CourseStatus status);
 
-    List<Lesson> findByCourseIdOrderByOrderIndexAsc(UUID courseId);
+    // Cursos de un instructor
+    List<Course> findByInstructorId(UUID instructorId);
+
+
+
 
 }
