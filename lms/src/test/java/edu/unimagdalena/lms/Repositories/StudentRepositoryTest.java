@@ -38,7 +38,7 @@ class StudentRepositoryTest {
     void setUp() {
         Instructor instructor = repoInstructor.save(Instructor.builder()
                 .email("prof@unimag.edu")
-                .fullName("Teacher Jaime")
+                .fullName("Teacher Jaime Perez")
                 .build());
 
         course = repoCourse.save(Course.builder()
