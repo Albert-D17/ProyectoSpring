@@ -31,8 +31,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 })
 class EnrollmentRepositoryTest {
 
-    @Autowired
-    EnrollmentRepository repoEnrollment;
+    @Autowired EnrollmentRepository repoEnrollment;
     @Autowired StudentRepository repoStudent;
     @Autowired CourseRepository repoCourse;
     @Autowired InstructorRepository repoInstructor;

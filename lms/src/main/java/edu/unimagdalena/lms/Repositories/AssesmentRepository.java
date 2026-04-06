@@ -15,6 +15,8 @@ public interface AssesmentRepository extends JpaRepository<Assessment, UUID> {
 
     Optional<Assessment> findByType(AssessmentType assesment);
 
+
+    //Evaluaciones tomadas por un estudiante en un período
     @Query("SELECT a FROM Assessment a WHERE a.student.id = :studentId AND a.takenAt BETWEEN :start AND :end")
     List<Assessment> findByStudentIdInDateRange(@Param("studentId") UUID studentId,
                                                 @Param("start") Instant start,
