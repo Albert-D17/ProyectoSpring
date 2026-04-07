@@ -1,10 +1,10 @@
 package edu.unimagdalena.lms.Service.Mappers;
 
 import edu.unimagdalena.lms.DTO.LessonDTO;
-import edu.unimagdalena.lms.entitles.Lesson;
+import edu.unimagdalena.lms.entities.Lesson;
 import org.mapstruct.*;
 
-    @Mapper(componentModel = "spring")
+    @Mapper()
     public interface LessonMapper {
 
         @Mapping(source = "course.id", target = "courseId")

@@ -1,8 +1,7 @@
-package edu.unimagdalena.lms.entitles;
+package edu.unimagdalena.lms.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
-import javax.annotation.processing.Generated;
 import java.time.Instant;
 import java.util.Set;
 import java.util.UUID;

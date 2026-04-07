@@ -1,4 +1,4 @@
-package edu.unimagdalena.lms.entitles.Enums;
+package edu.unimagdalena.lms.entities.Enums;
 
 public enum EnrollmentStatus {
     PENDING,

@@ -1,7 +1,7 @@
-package edu.unimagdalena.lms.entitles;
+package edu.unimagdalena.lms.entities;
 
 
-import edu.unimagdalena.lms.entitles.Enums.EnrollmentStatus;
+import edu.unimagdalena.lms.entities.Enums.AssessmentType;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -14,20 +14,23 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name = "enrollments")
+@Table(name = "assessments")
 
-public class Enrollment {
+public class Assessment {
+
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private EnrollmentStatus status;
+    private AssessmentType type;
 
-    @Column(name = "enrolled_at")
-    private Instant enrolledAt;
+    @Column(nullable = false)
+    private int score;
 
+    @Column(name = "taken_at")
+    private Instant takenAt;
 
     @ManyToOne
     @JoinColumn(name = "course_id")

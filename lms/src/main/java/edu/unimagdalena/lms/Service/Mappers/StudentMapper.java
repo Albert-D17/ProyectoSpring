@@ -1,13 +1,13 @@
 package edu.unimagdalena.lms.Service.Mappers;
 
 import edu.unimagdalena.lms.DTO.StudentDTO;
-import edu.unimagdalena.lms.entitles.Student;
+import edu.unimagdalena.lms.entities.Student;
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 
-@Mapper(componentModel = "spring")
+@Mapper()
 public interface StudentMapper {
 
     StudentDTO.StudentResponse toResponse(Student entity);

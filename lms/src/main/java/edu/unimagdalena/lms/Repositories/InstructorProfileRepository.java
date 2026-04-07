@@ -1,6 +1,6 @@
 package edu.unimagdalena.lms.Repositories;
 
-import edu.unimagdalena.lms.entitles.InstructorProfile;
+import edu.unimagdalena.lms.entities.InstructorProfile;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

@@ -1,7 +1,7 @@
-package edu.unimagdalena.lms.entitles;
+package edu.unimagdalena.lms.entities;
 
 
-import edu.unimagdalena.lms.entitles.Enums.CourseStatus;
+import edu.unimagdalena.lms.entities.Enums.CourseStatus;
 import jakarta.persistence.*;
 import lombok.*;
 

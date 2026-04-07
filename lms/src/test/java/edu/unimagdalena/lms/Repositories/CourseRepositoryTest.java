@@ -1,11 +1,11 @@
 package edu.unimagdalena.lms.Repositories;
 
-import edu.unimagdalena.lms.entitles.Course;
-import edu.unimagdalena.lms.entitles.Enrollment;
-import edu.unimagdalena.lms.entitles.Enums.CourseStatus;
-import edu.unimagdalena.lms.entitles.Enums.EnrollmentStatus;
-import edu.unimagdalena.lms.entitles.Instructor;
-import edu.unimagdalena.lms.entitles.Student;
+import edu.unimagdalena.lms.entities.Course;
+import edu.unimagdalena.lms.entities.Enrollment;
+import edu.unimagdalena.lms.entities.Enums.CourseStatus;
+import edu.unimagdalena.lms.entities.Enums.EnrollmentStatus;
+import edu.unimagdalena.lms.entities.Instructor;
+import edu.unimagdalena.lms.entities.Student;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+
 import org.springframework.test.context.TestPropertySource;
 
 

@@ -1,10 +1,10 @@
 package edu.unimagdalena.lms.Service.Mappers;
 
 import edu.unimagdalena.lms.DTO.EnrollmentDTO;
-import edu.unimagdalena.lms.entitles.Enrollment;
+import edu.unimagdalena.lms.entities.Enrollment;
 import org.mapstruct.*;
 
-@Mapper(componentModel = "spring")
+@Mapper()
  public interface EnrollmentMapper {
 
     @Mapping(source = "student.id", target = "studentId")
@@ -12,7 +12,7 @@ import org.mapstruct.*;
     EnrollmentDTO.EnrollmentResponse toResponse(Enrollment entity);
 
     @Mapping(source = "studentId", target = "student.id")
-    @Mapping(source = "courseId", target = "course.id")
+    @Mapping(source = "CourseId", target = "course.id")
     Enrollment toEntity(EnrollmentDTO.EnrollmentCreateRequest dto);
 
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)

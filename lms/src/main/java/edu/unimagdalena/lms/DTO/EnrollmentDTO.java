@@ -1,6 +1,6 @@
 package edu.unimagdalena.lms.DTO;
 
-import edu.unimagdalena.lms.entitles.Enums.EnrollmentStatus;
+import edu.unimagdalena.lms.entities.Enums.EnrollmentStatus;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -9,7 +9,7 @@ import java.util.UUID;
 public class EnrollmentDTO {
     public record  EnrollmentCreateRequest(
             EnrollmentStatus status,
-            String enrolledAt,
+            Instant enrolledAt,
             UUID CourseId,
             UUID studentId
 
