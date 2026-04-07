@@ -1,7 +1,7 @@
 package edu.unimagdalena.lms.Repositories;
 
-import edu.unimagdalena.lms.entitles.Enums.EnrollmentStatus;
-import edu.unimagdalena.lms.entitles.Instructor;
+import edu.unimagdalena.lms.entities.Enums.EnrollmentStatus;
+import edu.unimagdalena.lms.entities.Instructor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

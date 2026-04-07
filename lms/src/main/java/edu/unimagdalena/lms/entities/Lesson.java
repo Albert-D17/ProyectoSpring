@@ -1,4 +1,4 @@
-package edu.unimagdalena.lms.entitles;
+package edu.unimagdalena.lms.entities;
 
 
 import jakarta.persistence.*;

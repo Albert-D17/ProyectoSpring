@@ -1,7 +1,7 @@
 package edu.unimagdalena.lms.Repositories;
 
-import edu.unimagdalena.lms.entitles.*;
-import edu.unimagdalena.lms.entitles.Enums.CourseStatus;
+import edu.unimagdalena.lms.entities.*;
+import edu.unimagdalena.lms.entities.Enums.CourseStatus;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

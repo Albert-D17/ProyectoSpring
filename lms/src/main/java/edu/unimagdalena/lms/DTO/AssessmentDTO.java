@@ -1,6 +1,6 @@
 package edu.unimagdalena.lms.DTO;
 
-import edu.unimagdalena.lms.entitles.Enums.AssessmentType;
+import edu.unimagdalena.lms.entities.Enums.AssessmentType;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 
@@ -30,7 +30,7 @@ public record  AssessmentCreateRequest(
     ) implements Serializable {}
 
 
-    public record  AssesmentResponseDTO(
+    public record  AssesmentResponse(
             UUID id,
             AssessmentType type,
             int score,

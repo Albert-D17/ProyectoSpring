@@ -1,6 +1,6 @@
 package edu.unimagdalena.lms.Service.Mappers;
 
-import edu.unimagdalena.lms.entitles.Assessment;
+import edu.unimagdalena.lms.entities.Assessment;
 import org.mapstruct.*;
 import edu.unimagdalena.lms.DTO.AssessmentDTO;
 
@@ -9,7 +9,7 @@ import edu.unimagdalena.lms.DTO.AssessmentDTO;
 
         @Mapping(source = "student.id", target = "studentId")
         @Mapping(source = "course.id", target = "courseId")
-        AssessmentDTO.AssesmentResponseDTO toResponse(Assessment entity);
+        AssessmentDTO.AssesmentResponse toResponse(Assessment entity);
 
         @Mapping(source = "studentId", target = "student.id")
         @Mapping(source = "courseId", target = "course.id")

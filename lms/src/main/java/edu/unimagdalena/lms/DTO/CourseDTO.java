@@ -1,9 +1,6 @@
 package edu.unimagdalena.lms.DTO;
 
-import edu.unimagdalena.lms.entitles.Enums.AssessmentType;
-import edu.unimagdalena.lms.entitles.Enums.CourseStatus;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
+import edu.unimagdalena.lms.entities.Enums.CourseStatus;
 import jakarta.validation.constraints.NotBlank;
 
 import java.io.Serializable;

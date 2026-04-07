@@ -1,7 +1,7 @@
 package edu.unimagdalena.lms.Repositories;
 
-import edu.unimagdalena.lms.entitles.Assessment;
-import edu.unimagdalena.lms.entitles.Enums.AssessmentType;
+import edu.unimagdalena.lms.entities.Assessment;
+import edu.unimagdalena.lms.entities.Enums.AssessmentType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
