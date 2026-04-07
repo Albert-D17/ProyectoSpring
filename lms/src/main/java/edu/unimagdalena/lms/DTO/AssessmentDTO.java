@@ -5,12 +5,11 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 
 import java.io.Serializable;
-import java.security.DrbgParameters;
 import java.time.Instant;
 import java.util.UUID;
 
-public class AssessmetDTO {
-public record  AssesmentRequestDTO(
+public class AssessmentDTO {
+public record  AssessmentCreateRequest(
         AssessmentType type,
         @Min(0)
         @Max(100)

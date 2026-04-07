@@ -15,11 +15,11 @@ public class EnrollmentDTO {
 
     )implements Serializable {}
 
-    public record  EnrollmentUpdateDTO(
+    public record  EnrollmentUpdateRequest(
             EnrollmentStatus status
     ) implements Serializable {}
 
-    public record  EnrollmentResponseDTO(
+    public record  EnrollmentResponse(
             UUID id,
             EnrollmentStatus status,
             Instant enrolledAt,
